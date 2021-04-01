@@ -1,14 +1,28 @@
+@mixin d-flex($fd,$jc,$ai)
+    display: flex
+    flex-direction: $fd
+    justify-content: $jc
+    align-items: $ai
+    
+    
+
 * 
+    font-family: monospace,sans-serif
     margin: 0
     padding: 0
-    list-style: 0
-    text-decoration: 0
+    list-style: none
+    text-decoration: none
     box-sizing: border-box
+    outline: none
+
+.main-body
+    background-image: url("../images/bg.jpg")
+    background-size: cover
+    height: 100vh
 
 
 
 
 
-
-@import "./components/layout-components/_header"
-@import "./components/layout-components/_footer"
+@import "./components/layout-components/_header.sass"
+@import "./components/layout-components/_footer.sass"

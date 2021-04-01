@@ -1,2 +1,94 @@
-nav
-    background: blue
+.nav
+    max-width: 1200px
+    width: 1170px
+    margin: auto
+    height: 60px
+    background-color: rgba(55, 73, 87,0.7)
+    @include d-flex(row,space-around,center)
+    &__list
+        width: 600px
+        @include d-flex(row,space-around,center)
+        &_item
+            &--list
+                width:auto
+                height: auto
+                padding: 5px
+                color: white 
+                background: rgba(55, 73, 87,0.7)
+                border-radius: 4px
+                position: absolute
+                display: none
+                li
+                    width: 100%  
+                    a   
+                        display: block
+                        width: 100%
+                        border-bottom: 1px solid rgba(255,255 ,255 ,0.5 )
+                        height: 25px
+                        cursor: pointer
+                        border-radius: 4px
+                        padding: 5px
+                        margin: 5px
+                    a:hover
+                        background-color: rgba(0,0,0,0.7)
+                        border-bottom-color: coral
+                    a:focus
+                        background-color: rgba(0,0,0,0.7)
+                        border-bottom-color: coral 
+                    
+
+        
+            &--link
+                color: white
+                border-bottom: 2px solid transparent
+                border-radius: 4px
+                padding: 5px
+            &--link:hover
+                background-color: rgba(0,0,0,0.7)
+                transition: all 0.3s ease-in
+                border-bottom-color: coral
+            &--link:hover 
+                
+        
+                   
+                    
+
+            &--link:focus
+                background-color: rgba(0,0,0,0.7)
+                transition: all 0.3s ease-in
+                border-bottom-color: coral
+    &__form
+        width: 200px
+        @include d-flex(row,flex-end,center)           
+        &_search
+            width: 50px
+            height: 20px
+            padding: 5px
+            border: none
+            border-top-left-radius: 5px
+            border-bottom-left-radius: 5px
+            background-color: transparent
+            border: 0.1px solid white
+            border-right: none
+            color: white
+        &_search-btn
+            border-top-right-radius: 5px
+            border-bottom-right-radius: 5px
+            height: 20px
+            width:  20px
+            border: 0.1px solid white
+            border-left: none
+            background-color: transparent
+            color: white
+            cursor: pointer
+        &_search:focus
+            width: 200px
+            box-shadow: 0 0 4px white
+            transition: width 1s
+    &__logo
+        box-shadow: 0 0 4px white         
+.nav__list_item:hover .nav__list_item--list
+    display: block
+    transform: translateY(7px)
+    transition: all 1s
+    

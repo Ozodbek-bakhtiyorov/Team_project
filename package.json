@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Ozodbek-bakhtiyorov/Team_project/issues"
   },
-  "homepage": "https://github.com/Ozodbek-bakhtiyorov/Team_project#readme"
+  "homepage": "https://github.com/Ozodbek-bakhtiyorov/Team_project#readme",
+  "dependencies": {
+    "sass": "^1.32.8"
+  }
 }

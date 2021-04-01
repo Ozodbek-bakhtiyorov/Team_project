@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import Home from './components/layout-components/Header';
+import Header from './components/layout-components/Header';
+import './css/index.css';
 
     ReactDom.render(
-        <Home/>,
+       <div className="main-body">
+           <Header/>
+       </div>,
          document.getElementById('root')
     );

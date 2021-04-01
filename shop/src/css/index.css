@@ -1,0 +1,126 @@
+* {
+  font-family: monospace, sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.main-body {
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.nav {
+  max-width: 1200px;
+  width: 1170px;
+  margin: auto;
+  height: 60px;
+  background-color: rgba(55, 73, 87, 0.7);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav__list {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav__list_item--list {
+  height: auto;
+  padding: 5px;
+  color: white;
+  background: rgba(55, 73, 87, 0.7);
+  border-radius: 4px;
+  position: absolute;
+  display: none;
+}
+.nav__list_item--list li {
+  width: 100%;
+}
+.nav__list_item--list li a {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  height: 25px;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 5px;
+}
+.nav__list_item--list li a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-bottom-color: coral;
+}
+.nav__list_item--list li a:focus {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-bottom-color: coral;
+}
+.nav__list_item--link {
+  color: white;
+  border-bottom: 2px solid transparent;
+  border-radius: 4px;
+  padding: 5px;
+}
+.nav__list_item--link:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease-in;
+  border-bottom-color: coral;
+}
+.nav__list_item--link:focus {
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease-in;
+  border-bottom-color: coral;
+}
+.nav__form {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav__form_search {
+  width: 50px;
+  height: 20px;
+  padding: 5px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: transparent;
+  border: 0.1px solid white;
+  border-right: none;
+  color: white;
+}
+.nav__form_search-btn {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 20px;
+  width: 20px;
+  border: 0.1px solid white;
+  border-left: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+.nav__form_search:focus {
+  width: 200px;
+  box-shadow: 0 0 4px white;
+  transition: width 1s;
+}
+.nav__logo {
+  box-shadow: 0 0 4px white;
+}
+
+.nav__list_item:hover .nav__list_item--list {
+  display: block;
+  transform: translateY(7px);
+  transition: all 1s;
+}
+
+/*# sourceMappingURL=index.css.map */
