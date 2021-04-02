@@ -78,7 +78,7 @@
 }
 .nav__list_item--link:hover {
   background-color: rgba(0, 0, 0, 0.7);
-  transition: all 0.3s ease-in;
+  transition: all 1s ease-in;
   border-bottom-color: coral;
 }
 .nav__list_item--link:focus {
@@ -128,7 +128,6 @@
 .nav__list_item:hover .nav__list_item--list {
   display: block;
   transform: translateY(7px);
-  transition: all 1s;
 }
 
 .footer-body {
