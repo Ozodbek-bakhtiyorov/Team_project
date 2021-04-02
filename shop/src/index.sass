@@ -4,6 +4,10 @@
     justify-content: $jc
     align-items: $ai
 
+@mixin d-grid($col,$row)
+    display: grid
+    grid-template-columns: repeat($col $row)
+    
     
 .container
     max-width: 1200px

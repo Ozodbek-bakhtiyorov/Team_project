@@ -1,15 +1,67 @@
 .footer-body
-    height: 100vh
-    background-color: rgba(23, 12, 58, 0.9)
+   
+    background-color: rgba(14, 13, 61, 0.8)
 
-.footer
+.footer 
+    height: 100vh
     @extend .container
     @include d-flex(column,center,center)
-    text-align: center
-    padding: 10px
-    height: 20vh
-    h1
-        color: coral
-    p 
-        font-size: 20px
-        color: white    
+    &__header
+        &_h1
+            @include d-flex(column,center,center)
+            color: coral
+            height: 10vh
+        &_p
+            @include d-flex(column,center,center)
+            font-size: 20px
+            color: rgba(212, 210, 233, 0.9)
+            height: 10vh
+        
+    
+        
+    &__date
+        width:100%
+        height: 60vh 
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+         border: 1px solid red
+        border-bottom: 1px solid white 
+            
+        &_box
+            @include d-flex(column,center, center)
+            padding: 20px
+            width:350px 
+            height:auto
+            text-align: center
+            &--img
+                width: 200px
+                height: 200px
+                border-radius: 50%
+                background-image: url('../images/comp.png'), 
+                background-size: cover
+            &--head
+                color:  rgba(234, 255, 238, 0.9)
+                text-align: center
+            &--about
+                color: white
+            &--list
+                color:  rgba(164, 216, 216, 0.9)
+    &__end
+        height:20vh
+        width: 100%
+        &_txt
+            @include d-flex(row,center,center)
+            height: 5vh
+            color: white
+    &_smm
+        @include d-flex(row,center,center)
+        &--item
+           width: 100px
+           height: 100px
+           border: 1px solid white
+           border-radius: 50%
+
+
+      
+
