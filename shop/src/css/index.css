@@ -1,3 +1,9 @@
+.container, .footer, .nav {
+  max-width: 1200px;
+  width: 1170px;
+  margin: auto;
+}
+
 * {
   font-family: monospace, sans-serif;
   margin: 0;
@@ -14,15 +20,17 @@
   height: 100vh;
 }
 
+.nav-bg {
+  width: 100%;
+  background-color: rgba(55, 73, 87, 0.8);
+  height: 10vh;
+}
+
 .nav {
-  max-width: 1200px;
-  width: 1170px;
-  margin: auto;
-  height: 60px;
-  background-color: rgba(55, 73, 87, 0.7);
+  height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .nav__list {
@@ -121,6 +129,28 @@
   display: block;
   transform: translateY(7px);
   transition: all 1s;
+}
+
+.footer-body {
+  height: 100vh;
+  background-color: rgba(23, 12, 58, 0.9);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  height: 20vh;
+}
+.footer h1 {
+  color: coral;
+}
+.footer p {
+  font-size: 20px;
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */
