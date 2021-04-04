@@ -1,25 +1,37 @@
 .nav-bg
     width: 100%
     background-color: rgba(55, 73, 87,0.8)
-    height: 10vh
+    height:80px
+    top: 0
+    position: sticky
+
     
 .nav
     @extend .container
     height: 100%
     @include d-flex(row,space-between,center)
+    &__logo
+        width: 60px
+        background-color: white
+        border-radius: 50%
     &__list
-        width: 600px
+        width: 60%
         @include d-flex(row,space-around,center)
         &_item
             &--list
-                width:auto
-                height: auto
+                width:150px
+                height:300px
                 padding: 5px
                 color: white 
-                background: rgba(55, 73, 87,0.7)
+                background: rgba(55, 73, 87, 0.9)
                 border-radius: 4px
                 position: absolute
                 display: none
+                transform: translateY(10px)
+                animation-name: drop
+                animation-duration: 1s
+                -o-animation-timing-function: inline
+                animation-iteration-count: 1
                 >li
                     width: 100%  
                     a
@@ -51,10 +63,9 @@
                 border-bottom-color: coral          
             &--link:focus
                 background-color: rgba(0,0,0,0.7)
-                transition: all 0.3s ease-in
                 border-bottom-color: coral
     &__form
-        width: 200px
+        width: 20%  
         @include d-flex(row,flex-end,center)           
         &_search
             width: 50px
@@ -85,5 +96,42 @@
         box-shadow: 0 0 4px white         
 .nav__list_item:hover .nav__list_item--list
     display: block
-    transform: translateY(7px)
-    
+   
+.nav__list_item:hover .arrow
+    display: block
+@keyframes drop 
+    from
+        opacity: 0
+        height: 0px
+    to
+        height: 300px
+        opacity: 1
+.arrow
+    position: absolute
+    width: 100%
+    display: none
+    height: 10px
+    &__line
+        position: absolute
+        transform: translateX(20px) rotate(45deg)
+        width: 20px 
+        height: 20px
+        background-color: rgba(55, 73, 87,0.7)
+        border: none
+        cursor: pointer 
+/////////////////////////////tablet////////////////////////////import css-variables from 
+@media screen and ( max-width:816px  )
+    .nav-bg
+        
+        height: 60px
+
+    .nav
+        @extend .container
+        height: 100%
+        &__logo
+            width: 40px
+        &__list
+            width: 400px
+            &_item
+                &--link
+                    font-size: 15px

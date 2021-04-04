@@ -8,6 +8,14 @@
     display: grid
     grid-template-columns: repeat($col $row)
     
+@media screen and ( max-width:816px  )
+    .container
+        width: 768px
+
+@media screen and ( max-width:467px  )
+    .container
+        width: 350px
+    
     
 .container
     max-width: 1200px
@@ -26,6 +34,7 @@
 .main-body
     background-image: url("../images/bg.jpg")
     background-size: cover
+    background-attachment: fixed
     height: 100vh
     
 
